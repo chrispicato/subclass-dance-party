@@ -3,6 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
+  background-image: url('atlanta.jpeg'); 
+  background-size: cover;
   background-color:#444;
   font-size: 18px;
 }
@@ -21,7 +23,10 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
+}
+
+img{
+  width: 200px;
+  height: 200px;
 }

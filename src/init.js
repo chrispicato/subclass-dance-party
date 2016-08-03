@@ -24,23 +24,45 @@ $(document).ready(function() {
     var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
-      Math.random() * 1000
+      2000
+      //Math.random() * 2000
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
-    console.log(window.dancers);
 
   });
 
   $('.lineUp').on('click', function(event) {
 
-    var $pandaGirl = $(".pandaGirl");
-    var $panda = $(".panda");
-    $pandaGirl.addClass(".pandaGirl").css("height", '900px');
-    $panda.addClass(".panda").css("height", '800px');
-  //   window.dancers.forEach(function(dancer) {
-  //     dancer.$node.css("height", '900px');
-  //   });
-  // });
+    // var $pandaGirl = $(".pandaGirl");
+    // var $panda = $(".panda");
+
+    // for (var i = 0; i < window.dancers.length; i++) {
+    //   $('<div></div>').append(window.dancers[i]);
+    //   console.log($('.container'));
+    // for (var i = 0; i < window.dancers.length; i++) {
+    //   var leftVal = 30;
+    //   window.dancers[i].$node.offset({top: 700, left: leftVal});
+    //   leftVal = leftVal + 30;
+    // }
+    // $pandaGirl.position("absolute");
+    // $panda.position("absolute");
+    // var dancersDiv = $('<div></div>');
+    // dancersDiv.prependTo('body');
+
+    for (var i = 0; i < window.dancers.length; i++) {
+      $('span.container').append('<img height="100" width="100" src="./img/panda2.png"></img>');
+      $('span.container').append('<img height="100" width="100" src="./img/pandadancer.png"></img>');
+    }
+
+
+    // for (var i = 0; i < window.dancers.length; i++) {
+    //   $('<div></div>').prepend(window.dancers[i]);
+    // }
+
+  });
+
+  $('.pandaGirl').on('click', function() {
+    $(this.$node).animate({'background': 'black'});
   });
 });

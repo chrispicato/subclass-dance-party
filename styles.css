@@ -23,10 +23,13 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  position:absolute;
+  position: absolute;
 }
 
-img{
-  width: 200px;
-  height: 200px;
+img.panda {
+  height: 300px;
+}
+
+img.pandaGirl {
+  height: 300px;
 }
